@@ -459,6 +459,7 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/clock": "signal",
       "unconnected-(U1B-IOR_140_GBIN3-Pad93)": "TP1",
       "unconnected-(U1C-IOB_82_GBIN4-Pad52)": "TP2"
     },
