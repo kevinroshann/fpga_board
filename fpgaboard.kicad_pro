@@ -438,7 +438,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -449,8 +449,25 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -463,7 +480,56 @@
       "unconnected-(U1B-IOR_140_GBIN3-Pad93)": "TP1",
       "unconnected-(U1C-IOB_82_GBIN4-Pad52)": "TP2"
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "/SCL"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SDA"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/SCK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/MOSI"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/D1"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/D0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/D6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/D7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/D2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/D3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
